@@ -37,3 +37,23 @@ footer button {
 footer button:hover {
     border: 1px solid black;
 }
+
+@media (max-width: 750px) {
+    footer button {
+        width: 395px;
+    }
+
+    .break {
+        width: 370px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer button {
+        width: 300px;
+    }
+
+    .break {
+        width: 320px;
+    }
+}

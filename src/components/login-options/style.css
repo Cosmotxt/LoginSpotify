@@ -55,3 +55,27 @@ img {
     border: 1px solid rgba(159, 159, 159, 0.9);
 }
 
+@media (max-width: 750px) {
+    .link {
+        width: 395px;
+    }
+}
+
+@media (max-width: 400px) {
+    .link {
+        width: 50px;
+        text-indent: -9999px;
+        /* margin: 0 auto; */
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .link img {
+        margin: 0 auto;
+    }
+}

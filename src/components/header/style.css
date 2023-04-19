@@ -1,14 +1,18 @@
-.header {
+.header {  
+    background-color: black
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;    
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-around;  
     height: 7em;
-    background-color: #000;
 }
 
 .imagem img {
-    display: flex;
     width: 160px;
    
 }
@@ -22,4 +26,10 @@
 a {
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 750px) {
+    .imagem img {
+        width: 120px;
+    }
 }

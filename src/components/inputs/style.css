@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: star;
+    justify-content: flex-start;
 }
 
 label {
@@ -76,4 +76,58 @@ form #forgot-password {
     text-transform: uppercase;
     font-weight: 700;
     margin-left: 200px;
+}
+
+@media (max-width: 750px) {
+    .formulario label input{
+        width: 370px;
+    }
+
+    #submit input{
+        width: 395px;
+        height: 48px;
+        margin-left: 0;
+    }
+
+    #btns {
+        max-width: 395px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #btns:first-child {
+        justify-content: flex-start;
+    }
+
+    .line {
+        width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .formulario label input{
+        width: 300px;
+    }
+
+    #submit input{
+        width: 320px;
+        height: 48px;
+        margin-left: 0;
+    }
+
+    #btns {
+        max-width: 320px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #btns:first-child {
+        justify-content: flex-start;
+    }
+
+    .line {
+        width: 120px;
+    }
 }
